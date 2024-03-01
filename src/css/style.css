@@ -1,0 +1,106 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    padding: 45px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+font-size: 21px;
+margin-left: 5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu li a{
+    /* margin-left: 30px; */
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.menu li a:hover {
+    background-color: #5BC241;
+    color: #ffffff;
+}
+
+.menu  .btn {
+    background-color: #5BC241;
+    border-radius: 10px;
+    padding: 10px 5px;
+    
+}
+
+@media(max-width: 810px) {
+
+    .logo h1{
+        font-size: 40px;
+;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        
+    }
+    
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        margin-top: 50px;
+        
+    }
+    
+    .menu li {
+        
+        padding: 33px;
+    }
+
+    .menu li a{
+        font-size: 35px;
+        padding: 15px 30px;
+    }
+
+    .menu li:last-child{
+        margin-top: 20px;
+    }
+
+    .menu li.btn{
+        /* font-size: 18px; */
+        padding: 15px 23px;
+    }
+
+}
+
+@media(max-width: 330px){
+
+    .logo h1{
+        font-size: 30px;
+        
+    }
+
+.menu li a{
+    font-size: 25px;
+}
+}
